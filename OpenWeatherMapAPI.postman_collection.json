@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "6a1cca7e-6463-40f9-b81a-72cf6fc7afce",
+		"name": "OpenWeatherMapAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Weather Details of City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q={{cityName}}&month={{month}}&day={{day}}&APPID={{appId}}",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{cityName}}"
+						},
+						{
+							"key": "month",
+							"value": "{{month}}"
+						},
+						{
+							"key": "day",
+							"value": "{{day}}"
+						},
+						{
+							"key": "APPID",
+							"value": "{{appId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
